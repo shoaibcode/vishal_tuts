@@ -7,14 +7,47 @@
     <form>
       <!-- WRONG <input > </input> -->
       <label for="username">User Name</label>
-      <input id="username" type="text" value="Vishal" />
+      <input id="username" type="text" value="Vishal" name="username" />
 
       <label for="email">Email</label>
-      <input id="email" type="email" value="vishal@gmail.com" />
+      <input id="email" type="email" value="vishal@gmail.com" name="email" />
 
       <label for="password">Password</label>
-      <input id="password" type="password" />
+      <input id="password" type="password" name="password" />
 
+      <div>
+        <!-- Radio -->
+        <label for="user_gender_1">Male</label>
+        <input id="user_gender_1" type="radio" value="male" name="gender" />
+
+        <label for="user_gender_2">Female</label>
+        <input id="user_gender_2" type="radio" value="female" name="gender" />
+      </div>
+
+      <div>
+        <!-- Checkbox -->
+        <label for="meal_1">Veg</label>
+        <input id="meal_1" type="checkbox" value="veg" name="meal" />
+        <label for="meal_2">Non Veg</label>
+        <input id="meal_2" type="checkbox" value="non-veg" name="meal" />
+      </div>
+
+      <div>
+        <!-- Sselect -->
+        <select name="cars">
+          <option value="car1">Mercedes Model v1 </option>
+          <option value="car2">Mercedes Model v2 </option>
+          <option value="car3">Hero Honda</option>
+        </select>
+      </div>
+
+      <div>
+        <!-- TextArea -->
+        <textarea name="summary" rows="10" cols="12"></textarea>
+      </div>
+
+      <!-- Remember to remind difference -->
+      <button>Signup</button>
       <input type="submit" value="Signup" />
       <!-- <input type="date" /> -->
     </form>
